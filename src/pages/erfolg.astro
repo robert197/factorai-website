@@ -1,0 +1,79 @@
+---
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import '../styles/global.css'
+---
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anfrage gesendet | FactorAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <Header />
+
+  <section class="success-section">
+    <div class="container">
+      <div class="success-card">
+        <div class="success-icon">✓</div>
+        <h1>Anfrage gesendet!</h1>
+        <p class="success-text">Vielen Dank für dein Interesse an FactorAI. Wir melden uns in Kürze bei dir.</p>
+        <p class="success-sub">In der Regel antworten wir innerhalb von 24 Stunden.</p>
+        <a href="/" class="btn btn-primary">Zurück zur Startseite</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</body>
+</html>
+
+<style>
+  .success-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0 80px;
+  }
+  .success-card {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .success-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 32px;
+  }
+  .success-card h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--color-black);
+  }
+  .success-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-gray-500);
+    margin-bottom: 8px;
+  }
+  .success-sub {
+    font-size: 15px;
+    color: var(--color-gray-400, #999);
+    margin-bottom: 32px;
+  }
+</style>

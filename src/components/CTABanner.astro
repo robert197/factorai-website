@@ -12,7 +12,8 @@
           <img src="/images/hallway-meetingroom.jpg" alt="FactorAI Eingangsbereich" />
         </div>
       </div>
-      <form class="mietgesuch-form" action="#" method="POST">
+      <form class="mietgesuch-form" name="mietgesuch" method="POST" data-netlify="true" netlify>
+        <input type="hidden" name="form-name" value="mietgesuch" />
         <div class="form-group">
           <label for="name">Name & Unternehmen</label>
           <input type="text" id="name" name="name" placeholder="Max Muster, Muster AI GmbH" required />
